@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+    <groupId>FIXME</groupId>
+    <artifactId>FIXME</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <name>FIXME</name>
+    <description>FIXME</description>
+    <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>org.yeti</groupId>
+            <artifactId>yeti</artifactId>
+            <version>0.9.8-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+    <repositories>
+        <repository>
+            <id>chrisis.snapshots</id>
+            <name>chrisis-maven-repo</name>
+            <url>http://chrisichris.github.com/chrisis-maven-repo/snapshots</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>chrisis-plugin.snapshots</id>
+            <name>chrisis-plugin-maven-repo</name>
+            <url>http://chrisichris.github.com/chrisis-maven-repo/snapshots</url>
+        </pluginRepository>
+    </pluginRepositories>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.yeti</groupId>
+                <artifactId>yeti-maven-plugin</artifactId>
+                <version>0.3-SNAPSHOT</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                            <goal>testCompile</goal>
+                        </goals>
+                    </execution>
+				</executions>
+				<!--
+				Add this configuration if you only add the yeti-lib to
+				dependencies ie for android development 
+				
+				<configuration>
+                    <yetiLibOnly>0.9.8</yetiLibOnly>
+				</configuration>
+				-->
+            </plugin>
+        </plugins>
+    </build>
+
+
+</project>

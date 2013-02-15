@@ -1,0 +1,4 @@
+module org.foo.foom;
+
+println "Hello world";
+0
