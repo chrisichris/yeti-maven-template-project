@@ -1,0 +1,2 @@
+yeti-maven-template-project
+===========================
